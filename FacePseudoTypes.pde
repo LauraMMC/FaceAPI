@@ -4,8 +4,10 @@ public enum Action
 {
     closeEye   (0),
     openEye    (1),
-    openMouth  (2),
-    closeMouth (3);
+    closeBrow  (2), /*LM*/
+    openBrow   (3), /*LM*/
+    openMouth  (4),
+    closeMouth (5);
 
   private final int value;
   
@@ -48,8 +50,8 @@ public enum BasicState implements FeatureState { // Base class - Generic states
 
 public enum FeatureID 
 {
-  LeftBrow  (0), // Feature.values()
-  RightBrow (1),
+  LeftBrow  (0), // Feature.values()   /*LM*/
+  RightBrow (1),                       /*LM*/
   LeftEye   (2),  
   RightEye  (3),
   Mouth     (4),
